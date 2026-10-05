@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="css/styleGeneral.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <img src="imagesProject/gemaLogo.png" alt="logo">
+    </header>
+
+    <main class="contenido">
+
+        <div class="card-login">  <!-- reusamos la misma clase de tarjeta del login -->
+    
+            <h1>Reportes</h1>
+
+            <form id="devolucionForm">
+
+                <div class="campo">
+                    <label for="tipoRegistro">Mostrar</label>
+                    <select id="tipoRegistro" name="tipoRegistro">
+                        <option value="todos">Todos los registros</option>
+                        <option value="prestamos">Solo Préstamos</option>
+                        <option value="devoluciones">Solo Devoluciones</option>
+                        <option value="solicitudes">Solo Solicitudes</option>
+                    </select>
+                </div>
+                
+                <div class="campo-doble">
+                    <div class="campo">
+                        <label for="fechaDesde">Desde</label>
+                        <input type="date" id="fechaDesde" name="fechaDesde">
+                    </div>
+                    <div class="campo">
+                        <label for="fechaHasta">Hasta</label>
+                        <input type="date" id="fechaHasta" name="fechaHasta">
+                    </div>
+                </div>
+                
+                <div class="campo">
+                    <a href="registro.html" class="boton-prestamo">
+                        Filtrar
+                    </a>
+                </div>
+
+                <p id="mensajeConfirmacion" class="mensaje-error" style="display: none;"></p>
+
+            </form>
+    
+        </div>
+    
+    </main>
+  
+</body>
+</html>
