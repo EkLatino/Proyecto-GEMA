@@ -1,0 +1,94 @@
+/* ---------------------- */
+/* FONDO  DE LA PÁGINA */
+body {
+    background-color: #c5d2e6; /* Color de fondo */
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------- */
+/* BANDA SUPERIOR (TOPBAR) */
+.topbar {
+    background-color: #2e353f;  
+    padding: 20px 0;             /* espacio arriba y abajo del logo */
+    text-align: center;
+    position: relative;
+    z-index: 1;                  /* capa base: por detrás del logo */
+}
+  
+.topbar img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: #12355B;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 4px solid #F28C28;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------- */
+/* Tarjeta del formulario de login */
+.card-login {
+    background-color: white;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #12355B;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    border: 2px solid #003b64;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.boton-prestamo {
+    display: inline-block;
+    padding: 14px 30px;        /* → alto y ancho */
+    margin: 6px auto;
+    background-color: #f28c28;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;           /* Tamñano del texto */
+    font-weight: 600;          /* Negrita para peso visual al texto */
+}
+
+/* Cambio de color al pasar el mouse */
+.boton-prestamo:hover {
+    background-color: #12355B;
+}

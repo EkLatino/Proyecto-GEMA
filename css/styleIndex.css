@@ -1,0 +1,154 @@
+/* --------------------------------- */
+/* Fondo LOGIN */
+body {
+    background-color: #c5d2e6; /* Color de fondo */
+    font-family: Arial, sans-serif;
+}
+
+/* --------------------------------- */
+/* Título principal */
+h1 {
+    color: #12355B;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 4px solid #12355B;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------- */
+/* Banda */
+.topbar {
+    background-color: #2e353f;  
+    padding: 20px 0;             /* espacio arriba y abajo del logo */
+    text-align: center;
+    position: relative;
+    z-index: 1;                  /* capa base: por detrás del logo */
+}
+
+/* --------------------------------- */
+/* Imagen */
+.topbar img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.contenido {
+    text-align: center;
+}
+
+/* --------------------------------- */
+/* Tarjeta del formulario de login */
+.card-login {
+    background-color: white;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------- */
+/* Formulario */
+/* Campos de usuario y correo */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block; /* Hace que cada campo ocupe su propia línea */
+    width: 100%; /*Ancho del campo*/
+    padding: 12px; /*Agrega espacio interno para que el texto no quede pegado a los bordes*/
+    margin: 8px auto 15px auto; /* Centra el campo */
+    border: 2px solid #003b64; /* Color del borde del campo*/
+    border-radius: 8px; /*Redondea las esquinas del campo*/
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;   /* ← esto es lo que corrige el desborde */
+}
+
+/* Cuando el usuario hace clic en la casilla */
+input[type="text"]:focus, /* Cambio de color campo cuando se escribe */
+input[type="email"]:focus {
+    border-color: #f28c28; /* Estilo para el cambio */
+    box-shadow: 0 0 5px rgba(242, 140, 40, 0.4);
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --------------------------------- */
+/* Cambio de color cuando el usuario hace clic */
+input[type="password"]:focus {
+    border-color: #f28c28;
+    box-shadow: 0 0 5px rgba(242, 140, 40, 0.4);
+}
+
+/* --------------------------------- */
+/* Botón Iniciar sesión */
+button {
+    display: block;
+    width: 60%;
+    padding: 12px;
+    margin: 20px auto;
+    background-color: #12355B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Cambio de color al pasar el mouse */
+
+button:hover {
+    background-color: #f28c28;
+}
+
+/* --------------------------------- */
+/* Texto usuario nuevo */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --------------------------------- */
+/* Botón Registrarse */
+.boton-registro {
+    display: inline-block;
+    padding: 14px 30px;        /* antes: 5px 12px → más alto y más ancho */
+    margin: 6px auto;
+    background-color: #f28c28;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;           /* Tamñano del texto */
+    font-weight: 600;          /* Negrita para peso visual al texto */
+}
+
+/* Cambio de color al pasar el mouse */
+.boton-registro:hover {
+    background-color: #12355B;
+}
+
+/* Mensaje de error */
+.mensaje-error {
+    color: #c0392b;
+    background-color: #fdecea;
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+}

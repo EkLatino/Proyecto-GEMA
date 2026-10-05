@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INICIAR SESIÓN</title>
+
+    <link rel="stylesheet" href="css/styleIndex.css">
+</head>
+<body>
+    <!-- Banda superior con el logo -->
+    <header class="topbar">
+        <img src="imagesProject/gemaLogo.png" alt="logoGema">
+    </header>
+
+    <!-- Contenido del inicio de sesión -->
+    <main class="contenido">
+
+        <!-- Tarjeta blanca flotante que envuelve el formulario -->
+        <div class="card-login">
+
+            <h1>Acceso a GEMA</h1>
+
+            <form id="loginForm">
+
+                <!-- Usuario -->
+                <label for="usuario">Usuario</label>
+                <input 
+                    type="email" 
+                    id="usuario" 
+                    name="usuario" 
+                    placeholder="Ingrese su usuario"
+                    required
+                >
+
+                <!-- Contraseña -->
+                <label for="password">Contraseña</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Ingrese su contraseña"
+                    required
+                >
+
+                <!-- Botón iniciar sesión -->
+                <button type="submit">
+                    Iniciar sesión
+                </button>
+
+                <!-- Mensaje de error, oculto por defecto -->
+                <p id="mensajeError" class="mensaje-error" style="display: none;"></p>
+
+            </form>
+
+            <!-- Opción para usuarios nuevos -->
+            <p>¿Eres nuevo en la plataforma?</p>
+
+            <a href="registro.html" class="boton-registro">
+                Registrarme
+            </a>
+
+        </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

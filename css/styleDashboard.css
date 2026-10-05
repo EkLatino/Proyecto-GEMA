@@ -1,0 +1,126 @@
+/* ---------------------- */
+/* RESET BÁSICO */
+   * {
+    margin: 0;      
+    padding: 0;     
+    box-sizing: border-box;
+}
+
+/* ---------------------- */
+/* FONDO  DE LA PÁGINA */
+body {
+    background-color: #c5d2e6; /* Color de fondo */
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------- */
+/* TÍTULOS h1 (usados para el título de cada página) */
+h1 {
+    color: #12355B;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 4px solid #F28C28;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+/* ---------------------- */
+/* BANDA SUPERIOR (TOPBAR) */
+.topbar {
+    background-color: #2e353f;  
+    padding: 20px 0;             /* espacio arriba y abajo del logo */
+    text-align: center;
+    position: relative;
+    z-index: 1;                  /* capa base: por detrás del logo */
+}
+  
+.topbar img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    /* sin mix-blend-mode */
+}
+
+/* ---------------------- */
+/* CONTENEDOR PRINCIPAL
+   Envuelve el menú lateral + el contenido */
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENÚ LATERAL "OPCIONES" */
+.menu {
+    width: 240px;
+    background-color: #12355B;
+    padding: 30px 20px;   /* el padding-top (30px) es la referencia de altura
+                              con la que debe alinear la .topbar */
+}
+
+.menu h1 {
+    color: #F28C28;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #F28C28;
+    color: #12355B;
+}
+
+/* ÁREA DE CONTENIDO (derecha) */
+.contenido {
+    flex: 1;
+    padding: 30px;     
+    text-align: center;
+}
+
+.contenido h2 {
+    color: #12355B;
+    font-size: 32px;
+}
+
+.contenido img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+video {
+    display: block;
+    width: 600px;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+}
+.descripcion {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+  
+  

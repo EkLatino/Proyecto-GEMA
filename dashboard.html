@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMA - Panel Principal</title>
+    <link rel="stylesheet" href="css/styleDashboard.css">
+</head>
+<body>
+
+    <!-- Banda superior con el logo -->
+    <header class="topbar">
+        <img src="imagesProject/gemaLogo.png" alt="logo">
+    </header>
+
+    <div class="contenedor">
+
+        <aside class="menu">
+            <h1>OPCIONES</h1>
+            <nav>
+                <a href="herramientas.html">Herramientas</a>
+                <a href="prestamos.html">Préstamos</a>
+                <a href="devoluciones.html">Devoluciones</a>
+                <a href="solicitudes.html">Solicitudes</a>
+                <a href="reportes.html">Reportes</a>
+                <a href="index.html" onclick="sessionStorage.removeItem('usuarioLogueado')">Cerrar sesión</a>
+            </nav>
+        </aside>
+
+    <main class="contenido">
+            <h2>Bienvenido a GEMA</h2>
+        
+        <video controls width="600">
+            <source src="videos/topografia.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+
+        <p class="descripcion">
+            La plataforma GEMA permite gestionar diferentes herramientas y materiales
+            utilizados en el oficio de la topografía. A través de ella se pueden realizar
+            solicitudes, préstamos y devoluciones de materiales de manera rápida y
+            organizada.
+        
+            Además, permite a las diferentes empresas llevar un mejor control de los
+            materiales disponibles y facilita que las personas puedan encontrar de
+            manera rápida los recursos que necesitan para realizar sus actividades.
+        </p>
+    </main>
+
+    </div>
+</body>
+</html>

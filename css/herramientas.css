@@ -1,0 +1,120 @@
+/* ---------------------- */
+/* FONDO  DE LA PÁGINA */
+body {
+    background-color: #c5d2e6; /* Color de fondo */
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------- */
+/* BANDA SUPERIOR (TOPBAR) */
+.topbar {
+    background-color: #2e353f;  
+    padding: 20px 0;             /* espacio arriba y abajo del logo */
+    text-align: center;
+    position: relative;
+    z-index: 1;                  /* capa base: por detrás del logo */
+}
+  
+.topbar img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    /* sin mix-blend-mode */
+}
+
+
+h1 {
+    color: #12355B;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 4px solid #F28C28;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------- */
+/* Cuadrícula de herramientas */
+.grid-herramientas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    gap: 20px;                              /* espacio entre tarjetas */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --------------------------------- */
+/* Cada tarjeta individual */
+.card-herramienta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.card-herramienta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen dentro de la tarjeta */
+.card-herramienta img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;      /* recorta la imagen sin deformarla */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Nombre de la herramienta */
+.card-herramienta h3 {
+    color: #12355B;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Estado (Disponible / Prestado) */
+.card-herramienta p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 0;
+}
+
+.btn-prestar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #12355B;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-prestar:hover {
+    background-color: #f28c28;
+}
+
+@media (max-width: 768px) {
+    .grid-herramientas {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-herramientas {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+    }
+}

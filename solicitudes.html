@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes</title>
+    <link rel="stylesheet" href="css/styleGeneral.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <img src="imagesProject/gemaLogo.png" alt="logo">
+    </header>
+    
+    <main class="contenido">
+
+        <div class="card-login">  <!-- reusamos la misma clase de tarjeta del login -->
+    
+            <h1>Solicitudes</h1>
+
+            <form id="solicitudForm">
+
+                <div class="campo">
+                    <label for="solicitante">Nombre del solicitante</label>
+                    <input type="text" id="solicitante" name="solicitante" placeholder="Ingrese su nombre completo" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="tipoSolicitud">Tipo de solicitud</label>
+                    <select id="tipoSolicitud" name="tipoSolicitud" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="herramienta">Herramienta nueva (no está en inventario)</option>
+                        <option value="material">Material / Insumo (ej. pintura, clavos, cuerda)</option>
+                    </select>
+                </div>
+            
+                <div class="campo">
+                    <label for="nombreArticulo">Nombre del artículo</label>
+                    <input type="text" id="nombreArticulo" name="nombreArticulo" placeholder="Ej: Pintura amarilla tráfico, clavos de 2 pulgadas..." required>
+                </div>
+            
+                <div class="campo-doble">
+                    <div class="campo">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                    </div>
+                    <div class="campo">
+                        <label for="unidad">Unidad de medida</label>
+                        <select id="unidad" name="unidad" required>
+                            <option value="">-- Seleccione --</option>
+                            <option value="unidad">Unidad(es)</option>
+                            <option value="caja">Caja(s)</option>
+                            <option value="kg">Kilogramos</option>
+                            <option value="litro">Litro(s)</option>
+                            <option value="metro">Metro(s)</option>
+                            <option value="galon">Galón(es)</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="campo">
+                    <label for="fechaNecesaria">Fecha en que se necesita</label>
+                    <input type="date" id="fechaNecesaria" name="fechaNecesaria" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="prioridad">Prioridad</label>
+                    <select id="prioridad" name="prioridad" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta - urgente</option>
+                    </select>
+                </div>
+            
+                <div class="campo">
+                    <label for="justificacion">Justificación / Proyecto</label>
+                    <textarea id="justificacion" name="justificacion" rows="3" placeholder="Describa para qué se necesita y en qué proyecto se usará..." required></textarea>
+                </div>
+            
+                <a href="registro.html" class="boton-prestamo">
+                    Solicitudes
+                </a>
+            
+                <p id="mensajeConfirmacion" class="mensaje-error" style="display: none;"></p>
+            
+            </form>
+        </div>
+    </main>
+</body>
+</html>
